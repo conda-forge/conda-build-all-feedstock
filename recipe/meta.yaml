@@ -1,10 +1,13 @@
+{% set version = "0.10.0" %}
+
 package:
   name: conda-build-all
-  version: "0.8.0"
+  version: "{{ version }}"
 
 source:
-    git_tag: v0.8.0
-    git_url: https://github.com/SciTools/conda-build-all.git
+    fn: conda-build-all_v{{ version }}.tar.gz
+    url: https://github.com/SciTools/conda-build-all/archive/v{{version}}.tar.gz
+    sha1: 1ef9926fbbf4a53f17916e6a01e417bf13668cd6
 
 requirements:
   build:
