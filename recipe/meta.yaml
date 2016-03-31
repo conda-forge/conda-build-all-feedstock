@@ -1,4 +1,4 @@
-{% set version = "0.10.0" %}
+{% set version = "0.10.1" %}
 
 package:
   name: conda-build-all
@@ -7,7 +7,7 @@ package:
 source:
     fn: conda-build-all_v{{ version }}.tar.gz
     url: https://github.com/SciTools/conda-build-all/archive/v{{version}}.tar.gz
-    sha1: 1ef9926fbbf4a53f17916e6a01e417bf13668cd6
+    sha1: 01d033cdbe0966fc345f1bb1f2f88455d30e29dc
 
 requirements:
   build:
@@ -26,9 +26,10 @@ test:
   imports:
     - conda_build_all
   commands:
+    - conda build-all --version
     - conda buildall --version
     - conda-build-all --version
 
 about:
-  license: BSD-3
+  license: BSD 3-clause
   home: https://github.com/scitools/conda-build-all
