@@ -9,6 +9,10 @@ source:
     url: https://github.com/SciTools/conda-build-all/archive/v{{version}}.tar.gz
     sha1: f7d1feb3e1f767abbb147ba58447a756b63de59e
 
+build:
+  number: 0 
+  script: python setup.py install --single-version-externally-managed --record=record.txt
+
 requirements:
   build:
     - python
@@ -21,7 +25,7 @@ requirements:
     - conda
     - conda-build
     - anaconda-client
-    - mock  # [py<33]
+    - mock
 
 test:
   imports:
@@ -34,3 +38,8 @@ test:
 about:
   license: BSD 3-clause
   home: https://github.com/scitools/conda-build-all
+  summary: conda build-all is a conda subcommand which allows multiple distributions to be built (and uploaded) in a single command
+
+extra:
+  recipe-maintainers:
+    - pelson

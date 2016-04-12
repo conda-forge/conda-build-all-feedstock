@@ -3,11 +3,11 @@ About conda-build-all
 
 Home: https://github.com/scitools/conda-build-all
 
-Package license: BSD-3
+Package license: BSD 3-clause
 
 Feedstock license: BSD
 
-Summary: 
+Summary: conda build-all is a conda subcommand which allows multiple distributions to be built (and uploaded) in a single command
 
 
 
@@ -72,6 +72,11 @@ Current build status
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/conda-build-all-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/conda-build-all-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/conda-build-all-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/conda-build-all-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/conda-build-all-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/conda-build-all-feedstock/branch/master)
+
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/conda-build-all/badges/version.svg)](https://anaconda.org/conda-forge/conda-build-all)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/conda-build-all/badges/downloads.svg)](https://anaconda.org/conda-forge/conda-build-all)
 
 
 Updating conda-build-all-feedstock
