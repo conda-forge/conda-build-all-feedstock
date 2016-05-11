@@ -5,7 +5,7 @@ Home: https://github.com/scitools/conda-build-all
 
 Package license: BSD 3-clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: conda build-all is a conda subcommand which allows multiple distributions to be built (and uploaded) in a single command
 
