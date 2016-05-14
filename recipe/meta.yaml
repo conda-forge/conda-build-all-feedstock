@@ -10,7 +10,7 @@ source:
     sha1: f7d1feb3e1f767abbb147ba58447a756b63de59e
 
 build:
-  number: 0 
+  number: 1 
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -23,7 +23,7 @@ requirements:
     - setuptools
     - gitpython
     - conda
-    - conda-build
+    - conda-build <1.20.2
     - anaconda-client
     - mock
 
