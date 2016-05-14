@@ -1,4 +1,4 @@
-{% set version = "0.11.0" %}
+{% set version = "0.12.0" %}
 
 package:
   name: conda-build-all
@@ -7,7 +7,7 @@ package:
 source:
     fn: conda-build-all_v{{ version }}.tar.gz
     url: https://github.com/SciTools/conda-build-all/archive/v{{version}}.tar.gz
-    sha1: f7d1feb3e1f767abbb147ba58447a756b63de59e
+    sha1: 76166bbe889e8b479199452025421271e889a618
 
 build:
   number: 1 
@@ -23,7 +23,7 @@ requirements:
     - setuptools
     - gitpython
     - conda
-    - conda-build <1.20.2
+    - conda-build >=1.20.2
     - anaconda-client
     - mock
 
