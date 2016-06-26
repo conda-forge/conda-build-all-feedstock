@@ -1,4 +1,4 @@
-{% set version = "0.13.0" %}
+{% set version = "0.13.1" %}
 
 package:
   name: conda-build-all
@@ -7,10 +7,10 @@ package:
 source:
     fn: conda-build-all_v{{ version }}.tar.gz
     url: https://github.com/SciTools/conda-build-all/archive/v{{version}}.tar.gz
-    sha1: 24b3bd9c90b632db035803fed29e7c3111a48832
+    sha256: 644b7ea3b7bdec66f7dfb10f5d1dbd815afd55fa4d23ecbbfae04ff251ba9a0f
 
 build:
-  number: 1 
+  number: 0
   script: python setup.py install --single-version-externally-managed --record=record.txt
 
 requirements:
@@ -32,8 +32,6 @@ test:
     - conda_build_all
   commands:
     - conda build-all --version
-    - conda buildall --version
-    - conda-build-all --version
 
 about:
   license: BSD 3-clause
