@@ -1,13 +1,13 @@
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: conda-build-all
-  version: "{{ version }}"
+  version: {{ version }}
 
 source:
     fn: conda-build-all_v{{ version }}.tar.gz
     url: https://github.com/SciTools/conda-build-all/archive/v{{version}}.tar.gz
-    sha256: 00fa501941b515993253c2e08148dcd8ef3ba8f5e42b16352aa6d5a76caa2e7b
+    sha256: 1e34102f9055ce99500ce8ec87933d46a482cd20b865a180f2b064b4baf345f0
 
 build:
   number: 0
@@ -42,3 +42,5 @@ extra:
   recipe-maintainers:
     - jakirkham
     - pelson
+    - ocefpaf
+    - marqh
