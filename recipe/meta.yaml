@@ -22,7 +22,6 @@ requirements:
 
   run:
     - python
-    - setuptools
     - gitpython
     - conda >4
     - conda-build >=1.21.7
