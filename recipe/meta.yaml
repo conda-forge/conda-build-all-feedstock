@@ -8,9 +8,11 @@ source:
     fn: conda-build-all_v{{ version }}.tar.gz
     url: https://github.com/SciTools/conda-build-all/archive/v{{version}}.tar.gz
     sha256: ee831249c5218ab66bead5326b122e865bf00dd81a1cae8d3c522024cd2d35de
+    patches:
+      - conda_43_compat.patch
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
     - conda-build-all = conda_build_all.cli:main
