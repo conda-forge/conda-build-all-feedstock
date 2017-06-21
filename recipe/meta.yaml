@@ -36,6 +36,7 @@ test:
 
 about:
   license: BSD 3-clause
+  license_file: LICENSE
   home: https://github.com/conda-tools/conda-build-all
   summary: conda build-all is a conda subcommand which allows multiple distributions to be built (and uploaded) in a single command
 
