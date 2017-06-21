@@ -7,7 +7,7 @@ package:
 source:
     fn: conda-build-all_v{{ version }}.tar.gz
     url: https://github.com/conda-tools/conda-build-all/archive/v{{version}}.tar.gz
-    sha256: 5127c6db82edf1f2fe78ccd916031b5f07012d79c4e94ef853963c2a0be43eaa
+    sha256: 1a2e6b89858e8a5c6c55dd0fe64e18f7730a203740507f7746149771e22d8784
 
 build:
   number: 0
