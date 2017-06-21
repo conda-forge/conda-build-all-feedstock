@@ -10,7 +10,7 @@ source:
     sha256: 1a2e6b89858e8a5c6c55dd0fe64e18f7730a203740507f7746149771e22d8784
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
     - conda-build-all = conda_build_all.cli:main
