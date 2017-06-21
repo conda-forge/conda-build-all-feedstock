@@ -1,7 +1,7 @@
 About conda-build-all
 =====================
 
-Home: https://github.com/scitools/conda-build-all
+Home: https://github.com/conda-tools/conda-build-all
 
 Package license: BSD 3-clause
 
