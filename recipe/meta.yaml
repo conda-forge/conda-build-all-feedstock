@@ -6,7 +6,7 @@ package:
 
 source:
     fn: conda-build-all_v{{ version }}.tar.gz
-    url: https://github.com/conda-forge/conda-build-all/archive/v{{version}}.tar.gz
+    url: https://github.com/conda-tools/conda-build-all/archive/v{{version}}.tar.gz
     sha256: 5127c6db82edf1f2fe78ccd916031b5f07012d79c4e94ef853963c2a0be43eaa
 
 build:
@@ -36,7 +36,7 @@ test:
 
 about:
   license: BSD 3-clause
-  home: https://github.com/conda-forge/conda-build-all
+  home: https://github.com/conda-tools/conda-build-all
   summary: conda build-all is a conda subcommand which allows multiple distributions to be built (and uploaded) in a single command
 
 extra:
