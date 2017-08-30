@@ -10,7 +10,7 @@ source:
     sha256: e67b97d7af971807df4b18bac2f1ade5514fdf48cff427d1d87432e4a3330733
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
     - conda-build-all = conda_build_all.cli:main
@@ -23,7 +23,7 @@ requirements:
   run:
     - python
     - gitpython
-    - conda >4
+    - conda >=4.2
     - conda-build >=1.21.7
     - anaconda-client
     - mock
