@@ -1,4 +1,4 @@
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: conda-build-all
@@ -7,10 +7,10 @@ package:
 source:
     fn: conda-build-all_v{{ version }}.tar.gz
     url: https://github.com/conda-tools/conda-build-all/archive/v{{version}}.tar.gz
-    sha256: e67b97d7af971807df4b18bac2f1ade5514fdf48cff427d1d87432e4a3330733
+    sha256: 8b5e97a432a919f53044c1c603854145bd004c5dad6998418ecfaa35a34f5ca3
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
