@@ -10,7 +10,7 @@ source:
     sha256: e296f5eebae17f6a5ee90af9c2838fb5241656509cd008375f4bfbd704f53da8
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: python setup.py install --single-version-externally-managed --record=record.txt
   entry_points:
@@ -25,7 +25,8 @@ requirements:
     - python
     - gitpython
     - conda >=4.2
-    - conda-build >=1.21.7
+    # https://github.com/conda-tools/conda-build-all/issues/97
+    - conda-build >=1.21.7,<3
     - anaconda-client
     - mock
 
